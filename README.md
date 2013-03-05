@@ -1,24 +1,25 @@
 # TrafficSpy::Generator
 
-TODO: Write a gem description
-
-## Installation
-
-Add this line to your application's Gemfile:
-
-    gem 'traffic_spy-generator'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install traffic_spy-generator
-
 ## Usage
 
-TODO: Write usage instructions here
+* Install Generator Dependencies
+
+```
+$ bundle
+```
+
+* Update the Cucumber Feature to include your server information
+
+```gherkin
+  Background:
+    Given that a Traffic Spy server is running at 'YOURSITE'
+```
+
+* Run Cucumber
+
+```
+$ cucumber
+```
 
 ## Contributing
 
