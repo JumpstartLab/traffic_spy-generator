@@ -12,7 +12,7 @@ Given(/^the resolutions across all requests:$/) do |table|
 
   table.map_column!('Weight') {|weight| weight.to_i }
   table.map_column!('Resolutions') do |resolution|
-    width, height = resolution.split("x").map {|res| res.strip.to_i }
+    width, height = resolution.split("x").map {|res| res.strip }
     { width: width, height: height }
   end
 
