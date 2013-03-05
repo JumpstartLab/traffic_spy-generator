@@ -1,1 +1,2 @@
 require 'faraday'
+require 'json'

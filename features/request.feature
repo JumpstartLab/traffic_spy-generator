@@ -37,7 +37,7 @@ Feature: Requests
     And that the 'gSchool' source is defined with root url 'http://jumpstartlab.com'
     And a campaign, named 'Sign Up', composed with events: 'SignUpA, SignUpB, SignUpC'
     And a campaign, named 'Gallery Challenge', composed with events: 'galleryBtnA, galleryBtnB'
-    When I submit 5 requests:
+    When I submit 1000 requests:
       | URL                | VERB  | Response Time | Event       | Weight |
       | /                  | GET   | 2000..4500    |             | 1000   |
       | /articles          | GET   | 3000..4500    |             | 900    |
