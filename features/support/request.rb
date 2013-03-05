@@ -34,7 +34,7 @@ class Request
 
     params[:url] = request[:url]
     params[:respondedIn] = rand(request[:response_time])
-    params[:respondedAt] = random_time_within_the_last_day
+    params[:requestedAt] = random_time_within_the_last_day
     params[:eventName] = request[:event]
     params[:requestType] = request[:verb]
     params[:parameters] = []
