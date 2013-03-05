@@ -52,3 +52,7 @@ When(/^I submit (\d+) requests:$/) do |amount, table|
 
   amount.to_i.times { Request.generate }
 end
+
+Then(/^the results should be correctly represented$/) do
+  # "SUCCESS"
+end

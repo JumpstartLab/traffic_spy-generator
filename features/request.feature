@@ -4,6 +4,7 @@ Feature: Requests
   And submit request data to have it aggregated
 
   Background:
+    Given that a Traffic Spy server is running at 'http://127.0.0.1:9393'
     Given the user agents across all requests:
       | Weight | User Agents                                                                                                                                                                |
       | 4      | Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0.1) Gecko/20100101 Firefox/7.0.12011-10-16 20:23:00                                                                              |
@@ -33,8 +34,7 @@ Feature: Requests
       | 1      | 2560 x 1440 |
 
   Scenario: Registration
-    Given that a Traffic Spy server is running at 'http://127.0.0.1:9393'
-    And that the 'gSchool' source is defined with root url 'http://jumpstartlab.com'
+    Given that the 'gSchool' source is defined with root url 'http://jumpstartlab.com'
     And a campaign, named 'Sign Up', composed with events: 'SignUpA, SignUpB, SignUpC'
     And a campaign, named 'Gallery Challenge', composed with events: 'galleryBtnA, galleryBtnB'
     When I submit 1000 requests:
@@ -62,4 +62,4 @@ Feature: Requests
       | /signup            | PUT   | 1000..1500    | SignUpC     | 200    |
       | /signout           | POST  | 1000..1500    |             | 500    |
       | /unsubscribe       | POST  | 1000..4500    | Unsubscribe | 200    |
-
+    Then the results should be correctly represented
