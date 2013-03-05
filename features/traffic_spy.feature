@@ -1,4 +1,4 @@
-Feature: Requests
+Feature: Traffic Spy
   As a traffic spy customer
   I am able to able to register with the service
   And submit request data to have it aggregated
@@ -33,7 +33,7 @@ Feature: Requests
       | 5      | 1680 x 900  |
       | 1      | 2560 x 1440 |
 
-  Scenario: Registration
+  Scenario: Registration, Campaigns, and Requests
     Given that the 'gSchool' source is defined with root url 'http://jumpstartlab.com'
     And a campaign, named 'Sign Up', composed with events: 'SignUpA, SignUpB, SignUpC'
     And a campaign, named 'Gallery Challenge', composed with events: 'galleryBtnA, galleryBtnB'
