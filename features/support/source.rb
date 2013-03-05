@@ -11,6 +11,6 @@ class Source
   end
 
   def create_campaign(campaign_name,events)
-    TrafficSpy.connection.post "sources/#{name}/campaigns", { eventNames: events }
+    TrafficSpy.connection.post "sources/#{name}/campaigns", { campaignName: campaign_name, eventNames: events }
   end
 end
