@@ -40,22 +40,22 @@ Feature: Traffic Spy
     When I submit 1000 requests:
       | URL                | VERB  | Response Time | Event       | Weight |
       | /                  | GET   | 2000..4500    |             | 1000   |
-      | /articles          | GET   | 3000..4500    |             | 900    |
+      | /articles          | GET   | 5500..6000    |             | 900    |
       | /articles/1        | GET   | 1000..3000    |             | 75     |
       | /articles/2        | GET   | 1000..2500    |             | 20     |
       | /articles/8        | GET   | 1000..2500    |             | 55     |
       | /articles/10       | GET   | 1000..2000    |             | 10     |
-      | /galleries         | GET   | 4000..9500    | galleryBtnB | 100    |
-      | /galleries         | GET   | 4000..9500    | galleryBtnA | 300    |
+      | /galleries         | GET   | 8000..9500    | galleryBtnB | 100    |
+      | /galleries         | GET   | 8000..9500    | galleryBtnA | 300    |
       | /galleries/17      | GET   | 4000..5500    |             | 80     |
       | /galleries/1       | GET   | 4000..5500    |             | 20     |
       | /galleries/2       | GET   | 4000..5500    |             | 25     |
       | /about             | GET   |  500..1000    |             | 300    |
       | /contact           | GET   |  500..1000    |             | 50     |
-      | /tags              | GET   | 3000..6500    |             | 100    |
+      | /tags              | GET   | 3000..4500    |             | 100    |
       | /tags/toy-soldiers | GET   | 3000..5500    |             | 100    |
       | /tags/game_shows   | GET   | 3000..5500    |             | 100    |
-      | /users             | GET   | 2000..9000    |             | 600    |
+      | /users             | GET   | 6000..8000    |             | 600    |
       | /users/settings    | GET   | 2000..5500    |             | 200    |
       | /signup            | GET   | 1000..3500    | SignUpA     | 800    |
       | /signup            | POST  | 1000..1500    | SignUpB     | 400    |
