@@ -8,7 +8,7 @@
 $ bundle
 ```
 
-* Update the Cucumber Feature file `features/traffic_spy.feature` to include your server information
+* Update the Cucumber Feature file `features/traffic_spy.feature` to include your server information if necessary
 
 ```gherkin
 Feature: Traffic Spy
@@ -17,7 +17,7 @@ Feature: Traffic Spy
   And submit request data to have it aggregated
 
   Background:
-    Given that a Traffic Spy server is running at 'http://YOURSITE:PORT'
+    Given that a Traffic Spy server is running at 'http://127.0.0.1:9393'
 ```
 
 * Run Cucumber
