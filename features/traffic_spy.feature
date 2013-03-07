@@ -13,12 +13,12 @@ Feature: Traffic Spy
       | 3      | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/14.0.835.202 Safari/535.12011-10-16 20:21:13                                   |
       | 4      | Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)2011-10-16 20:21:07                                                                                  |
       | 3      | Mozilla/5.0 (Linux; U; Android 4.0.3; ko-kr; LG-L160L Build/IML74K) AppleWebkit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30                                |
-      | 6      | Mozilla/5.0 (BlackBerry; U; BlackBerry 9900; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.346 Mobile Safari/534.11+                                           |
-      | 6      | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.152 Safari/537.22                                                   |
+      | 20     | Mozilla/5.0 (BlackBerry; U; BlackBerry 9900; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.346 Mobile Safari/534.11+                                           |
+      | 15     | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.152 Safari/537.22                                                   |
       | 2      | Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_0 like Mac OS X; en-us) AppleWebKit/532.9 (KHTML, like Gecko) Version/4.0.5 Mobile/8A293 Safari/6531.22.7                          |
       | 3      | Mozilla/5.0 (iPad; U; CPU OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B334b Safari/531.21.102011-10-16 20:23:50           |
-      | 6      | Opera/9.80 (Windows NT 6.0) Presto/2.12.388 Version/12.14                                                                                                                  |
-      | 6      | Mozilla/5.0 (Windows; U; MSIE 9.0; WIndows NT 9.0; en-US))                                                                                                                 |
+      | 10     | Opera/9.80 (Windows NT 6.0) Presto/2.12.388 Version/12.14                                                                                                                  |
+      | 8      | Mozilla/5.0 (Windows; U; MSIE 9.0; WIndows NT 9.0; en-US))                                                                                                                 |
       | 6      | Mozilla/5.0 (compatible; MSIE 10.6; Windows NT 6.1; Trident/5.0; InfoPath.2; SLCC1; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 2.0.50727) 3gpp-gba UNTRUSTED/1.0 |
     And the resolutions across all requests:
       | Weight | Resolutions |
